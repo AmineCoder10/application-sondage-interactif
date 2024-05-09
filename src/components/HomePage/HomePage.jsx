@@ -3,6 +3,7 @@ export function Home() {
     <div>
       <h1>hi</h1>
       <h1>dfgdfg</h1>
+      <h1>dfgdfg</h1>
     </div>
   )
 }

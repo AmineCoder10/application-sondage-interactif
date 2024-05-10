@@ -1,11 +1,7 @@
-export function Home() {
-  return (
-    <div>
-      <h1>hi</h1>
-      <h1>dfgdfg</h1>
-      <h1>dfgdfg</h1>
+import React from 'react'
 
-      <p>rtgrtgetg</p>
-    </div>
+export default function HomePage() {
+  return (
+    <div>HomePage</div>
   )
 }

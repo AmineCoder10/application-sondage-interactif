@@ -1,0 +1,119 @@
+.card {
+  margin-top: 50px;
+  width: 300px;
+  height: 250px;
+  margin-right: 40px;
+  margin-left: 80px;
+  border-radius: 15px;
+  background: rgba(105, 13, 197, 0.103);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(200, 215, 255);
+}
+
+.card::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  border-radius: 50%;
+  border: 35px solid rgba(64, 18, 192, 0.102);
+  transition: all .8s ease;
+  filter: blur(.5rem);
+}
+
+.text {
+  flex-grow: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(131, 149, 165);
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+
+
+.subtitle {
+  font-size: .6em;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.691);
+}
+
+.icons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  width: 84px;
+  height: 35px;
+  background-color: rgb(200, 215, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  stroke: rgb(38, 59, 126);
+}
+
+.btn:hover {
+  background-color: rgb(200, 215, 255);
+}
+
+.card:hover::before {
+  width: 140px;
+  height: 140px;
+  top: -30%;
+  left: 50%;
+  filter: blur(0rem);
+}
+
+.card-content {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.custom-button {
+  background-color: #24405e;
+  color: white;
+  justify-items: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 8PX 8PX 0;
+}
+
+.custom-button:hover {
+  background-color: #0f1d2b;
+}
+
+
+.cubutton {
+  background-color: #24405e;
+  color: white;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+.cubutton:hover {
+  background-color: #0f1d2b;
+}

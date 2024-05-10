@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
-import React, { useState } from "react";
+import { useState } from "react";
 import { cardsData } from "../data/data";
 
 

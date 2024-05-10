@@ -1,10 +1,10 @@
-
+import Survey from "./components/Survey/Survey"
 
 function App() {
 
   return (
     <>
-      <h1>Hello</h1>
+      <Survey />
     </>
   )
 }

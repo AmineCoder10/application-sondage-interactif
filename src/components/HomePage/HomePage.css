@@ -1,0 +1,113 @@
+.hero__section {
+  padding: 60px 170px;
+  display: flex;
+  background-color: var(--hero-bg);
+}
+
+.hero__content {
+  padding-top: 45px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-group {
+  display: flex;
+}
+
+.card-group>div {
+  margin-right: 20px;
+  /* Adjust as needed */
+}
+
+.card-group>div:last-child {
+  margin-right: 0;
+  /* Remove margin from the last card */
+}
+
+.hero__content p {
+  color: var(--primary-color);
+  line-height: 22px;
+  font-size: .92rem;
+}
+
+.hero__content p:nth-child(1) {
+  font-weight: 500;
+}
+
+.hero__content h2 {
+  margin: 20px 0px;
+}
+
+.startSbutton {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.startSbutton a:hover {
+  color: unset;
+}
+
+.cssbuttons-io-button {
+  background: #19206b;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #929ed8;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #443fd2;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #000000;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}

@@ -1,10 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
 import './App.css';
-import CreateSurvey from './components/CreateSurvey/CreateSurvey';
-import Header from './components/Header/Header';
 import HomePage from './components/HomePage/HomePage';
+import CreateSurvey from './components/CreateSurvey/CreateSurvey';
 import Survey from './components/Survey/Survey';
+import Header from './components/Header/Header';
 
 function App() {
 
@@ -13,7 +12,6 @@ function App() {
       <BrowserRouter>
 
         <Header />
-
 
 
         <Routes>

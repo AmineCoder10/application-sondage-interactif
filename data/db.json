@@ -1,0 +1,29 @@
+{
+  "Surveys" : [
+    {
+      "id":1,
+      "titleSurvey" : "Football",
+      "questions" : [
+        {
+          "titleQuestion" : "who is the best player in the team ?",
+          "option1" : "messi",
+          "option2" : "neymar",
+          "option3" : "suares"
+        }
+      ]
+    },
+
+    {
+      "id":2,
+      "titleSurvey" : "Languages",
+      "questions" : [
+        {
+          "titleQuestion" : "What is the prefered language ?",
+          "option1" : "c#",
+          "option2" : "python",
+          "option3" : "js"
+        }
+      ]
+    }
+  ]
+}

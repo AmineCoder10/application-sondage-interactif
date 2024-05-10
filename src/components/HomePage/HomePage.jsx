@@ -15,15 +15,14 @@ function HomePage() {
         <div className="hero__content">
           <p className="hero__subtitle">best Pool plateform in {year}</p>
           <h2>Make Your Survey</h2>
-          <p>
-            {" "}
+          <p style={{width:"700px"}}>
             HELLO, Create customized surveys tailored to your needs. Gather 
             valuable insights, make informed decisions, and engage with your
             audience like never before.
           </p>
           <br />
           <motion.button className="startSbutton" whileHover={{ scale: 1.1 }}>
-            <Link to="/create">START</Link>
+            <Link to="/create">CREATE</Link>
           </motion.button>
 
           <a href="#cards" style={{ marginLeft: "30px" }}>
@@ -34,7 +33,7 @@ function HomePage() {
         </div>
 
         <div className="hero__image">
-          <img src={img} alt="hero_image" style={{ width: "130%" }} />
+          <img src={img} alt="hero_image" style={{ width: "100%" }} />
         </div>
       </section>
 

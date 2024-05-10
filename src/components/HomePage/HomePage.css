@@ -2,6 +2,7 @@
   padding: 60px 170px;
   display: flex;
   background-color: var(--hero-bg);
+  align-items: center;
 }
 
 .hero__content {
@@ -9,6 +10,7 @@
 }
 
 .card-container {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;

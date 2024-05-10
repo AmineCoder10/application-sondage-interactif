@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 import './HomePage.css'
@@ -18,7 +17,7 @@ function HomePage() {
           <h2>Make Your Survey</h2>
           <p>
             {" "}
-            HELLO, Create customized surveys tailored to your needs. Gather
+            HELLO, Create customized surveys tailored to your needs. Gather 
             valuable insights, make informed decisions, and engage with your
             audience like never before.
           </p>

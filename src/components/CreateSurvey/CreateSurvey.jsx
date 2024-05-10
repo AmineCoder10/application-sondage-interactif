@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Container, Button, FormGroup, Row, Col } from 'reactstrap';
 import './CreateSurvey.css';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
-export default function CreateSurvey({ addSurvey }) {
+export default function CreateSurvey() { 
     const [surveyTitle, setSurveyTitle] = useState('');
     const [questions, setQuestions] = useState([{ question: '', options: [{ text: '' }, { text: '' }] }]);
 
@@ -52,12 +53,8 @@ export default function CreateSurvey({ addSurvey }) {
         setQuestions([...questions, { question: '', options: [{ text: '' }, { text: '' }] }]);
     };
 
-    const handleCreateSurvey = () => {
-        addSurvey({ title: surveyTitle, questions });
-        console.log('bla bla' + { title: surveyTitle, questions });
-        setSurveyTitle('');
-        setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);
-    };
+   
+    
 
     return (
         <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", borderRadius: "20px" }}>
@@ -102,6 +99,7 @@ export default function CreateSurvey({ addSurvey }) {
                                         <div className='search'>
                                             <input
                                                 type="text"
+                                                required
                                                 placeholder={`Enter option ${optionIndex + 1}`}
                                                 value={option.text}
                                                 onChange={(e) => handleOptionChange(questionIndex, optionIndex, e)}

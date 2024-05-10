@@ -1,47 +1,12 @@
+import { Link } from "react-router-dom";
 import Cards from "./Cards";
 import React, { useState } from "react";
-
+import { cardsData } from "../data/data";
 
 
 export default function CardGallery() {
 
-  const cardsData = [
-    {
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    },
-    {
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    },
-    {
 
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    },
-    {
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    },
-    {
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    },
-    {
-
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    },
-    {
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    },
-    {
-      title: 'Noteworthy technology acquisitions 2021',
-      description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
-    }
-
-  ];
 
   const [showAll, setShowAll] = useState(false);
 
@@ -57,16 +22,14 @@ export default function CardGallery() {
         </div>
 
       </div>
+      <Link to="/survey">
       {
         !showAll && (
-          <button className="cubutton" onClick={() => setShowAll(true)}>Show More</button>
+          <button className="cubutton" onClick={() => setShowAll(true)}> others</button>
         )
       }
+      </Link>
 
-      <a href="/survey">
-
-        <button className="cubutton" >Other Survies</button>
-      </a>
 
 
     </>

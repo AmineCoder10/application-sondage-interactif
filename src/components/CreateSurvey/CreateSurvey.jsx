@@ -60,7 +60,7 @@ export default function CreateSurvey({ addSurvey }) {
     };
 
     return (
-        <Container style={{ position: "relative", marginTop: "20px", border: "solid black", padding: "58px", marginTop: "100px", borderRadius: "20px" }}>
+        <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", borderRadius: "20px" }}>
             <div className='form'>
                 <h1 className="mb-4 survey-title">Create Survey</h1>
                 <Row>

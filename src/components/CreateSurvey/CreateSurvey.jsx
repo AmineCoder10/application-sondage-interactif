@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Container, Button, FormGroup, Row, Col } from 'reactstrap';
 import './CreateSurvey.css';
 import { motion } from 'framer-motion';
 
-export default function CreateSurvey({ addSurvey }) {
+export default function CreateSurvey() { 
     const [surveyTitle, setSurveyTitle] = useState('');
     const [questions, setQuestions] = useState([{ question: '', options: [{ text: '' }, { text: '' }] }]);
 
@@ -53,7 +53,7 @@ export default function CreateSurvey({ addSurvey }) {
     };
 
     const handleCreateSurvey = () => {
-        addSurvey({ title: surveyTitle, questions });
+        // addSurvey({ title: surveyTitle, questions });
         console.log('bla bla' + { title: surveyTitle, questions });
         setSurveyTitle('');
         setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);

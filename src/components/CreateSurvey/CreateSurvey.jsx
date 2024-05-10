@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Button, FormGroup, Row, Col } from 'reactstrap';
 import './CreateSurvey.css';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 export default function CreateSurvey({ addSurvey }) {
     const [surveyTitle, setSurveyTitle] = useState('');
@@ -52,12 +53,48 @@ export default function CreateSurvey({ addSurvey }) {
         setQuestions([...questions, { question: '', options: [{ text: '' }, { text: '' }] }]);
     };
 
-    const handleCreateSurvey = () => {
-        addSurvey({ title: surveyTitle, questions });
-        console.log('bla bla' + { title: surveyTitle, questions });
-        setSurveyTitle('');
-        setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);
+    const handleCreateSurvey = async () => {
+        // Check if survey title is empty
+        if (surveyTitle.trim() === '') {
+            alert("Survey title cannot be empty");
+            return; // Exit function early
+        }
+    
+        // Check if any question is empty
+        const emptyQuestionIndex = questions.findIndex(q => q.question.trim() === '');
+        if (emptyQuestionIndex !== -1) {
+            alert(`Question ${emptyQuestionIndex + 1} cannot be empty`);
+            return; // Exit function early
+        }
+    
+        // Check if any option within any question is empty
+        const emptyOptionIndex = questions.findIndex(q => q.options.some(o => o.text.trim() === ''));
+        if (emptyOptionIndex !== -1) {
+            const emptyQuestion = questions[emptyOptionIndex];
+            const emptyOption = emptyQuestion.options.find(o => o.text.trim() === '');
+            const emptyOptionIndexWithinQuestion = emptyQuestion.options.indexOf(emptyOption);
+            alert(`Option ${emptyOptionIndexWithinQuestion + 1} of Question ${emptyOptionIndex + 1} cannot be empty`);
+            return; // Exit function early
+        }
+    
+        try {
+            // Save survey data to JSON Server
+            const response = await axios.post('http://localhost:3000/Surveys', {
+                title: surveyTitle,
+                questions
+            });
+    
+            // Handle successful response
+            console.log('Survey data saved:', response.data);
+            // Clear the form fields
+            setSurveyTitle('');
+            setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);
+        } catch (error) {
+            // Handle error
+            console.error('Error saving survey data:', error);
+        }
     };
+    
 
     return (
         <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", borderRadius: "20px" }}>
@@ -102,6 +139,7 @@ export default function CreateSurvey({ addSurvey }) {
                                         <div className='search'>
                                             <input
                                                 type="text"
+                                                required
                                                 placeholder={`Enter option ${optionIndex + 1}`}
                                                 value={option.text}
                                                 onChange={(e) => handleOptionChange(questionIndex, optionIndex, e)}

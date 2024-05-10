@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 export default function Cards({ title, description }) {
   return (
+    <>
+    
     <div>
       <div className="card" id="cards">
         <div className="text">
@@ -25,6 +27,11 @@ export default function Cards({ title, description }) {
       <br />
 
     </div>
+
+    
+    </>
+
+    
   );
 }
 

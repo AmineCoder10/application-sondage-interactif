@@ -43,6 +43,7 @@ function HomePage() {
           <CardGallery />
         </div>
       </div>
+      
     </>
   );
 }

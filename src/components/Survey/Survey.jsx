@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import Cards from '../Cards/Cards';
 
@@ -22,3 +23,12 @@ function Survey() {
 }
 
 export default Survey
+=======
+import React from 'react'
+
+export default function Survey() {
+  return (
+    <div>Survey</div>
+  )
+}
+>>>>>>> b939d2512b188d44ac1d68a56091118ad69b0673

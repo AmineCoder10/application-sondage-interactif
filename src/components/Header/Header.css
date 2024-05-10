@@ -1,0 +1,76 @@
+.header {
+    padding: 7px 170px;
+    background-color: var(--hero-bg);
+  }
+  
+  .nav__menu{
+      margin-top: 15px;
+  }
+   
+  .nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+   
+  .nav__logo img {
+    width: 30px;
+    height: 30px;
+  }
+   
+  .nav__logo p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: 5px;
+  }
+   
+  .nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 2.5rem;
+  }
+   
+  .nav__item {
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+   
+  .nav__item a:hover {
+    color: var(--primary-color);
+  }
+   
+  .nav__active {
+    color: var(--primary-color);
+    font-weight: 700;
+    border-radius: 29px;
+  }
+   
+  .nav__sticky {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+   
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+   
+    to {
+      opacity: 1;
+    }
+  }

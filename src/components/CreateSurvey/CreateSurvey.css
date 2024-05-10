@@ -1,0 +1,94 @@
+.form .survey-title {
+
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  
+  .test {
+    border-radius: 10px;
+    background-color: var(--hero-bg);
+    padding: 4%;
+  }
+  
+  .add-option-btn {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .add-q-btn {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /*------------------------------------------*/
+  
+  .formField {
+    margin: 10px;
+    position: relative;
+  }
+  
+  .formField input {
+    width: 80%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 0 5px transparent;
+  }
+  
+  .formField input:hover,
+  .formField input:focus {
+    box-shadow: 0 0 0 2px #333;
+  }
+  
+  .formField span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .formField input:focus+span,
+  .formField input:valid+span {
+    transform: translateY(-32px) translateX(-5px) scale(0.95);
+    transition: 0.3s ease-in-out;
+  }
+  
+  
+  /*------------------------------------------*/
+  
+  .search {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search input[type="text"] {
+    width: 170px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #f1f1f1;;
+  }
+  
+  
+  /*------------------------------------------*/
+  

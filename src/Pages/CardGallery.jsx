@@ -23,7 +23,7 @@ export default function CardGallery() {
           <Link to="/survey">
             {
               !showAll && (
-                <motion.button className="cubutton" onClick={() => setShowAll(true)} whileHover={{ scale: 1.05 }}> All Survies <i class="ri-arrow-right-line" style={{ marginLeft: "5px" }}></i></motion.button>
+                <motion.button className="cubutton" onClick={() => setShowAll(true)} whileHover={{ scale: 1.05 }}> All Survies <i className="ri-arrow-right-line" style={{ marginLeft: "5px" }}></i></motion.button>
               )
             }
           </Link>

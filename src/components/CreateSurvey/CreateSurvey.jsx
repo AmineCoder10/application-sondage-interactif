@@ -4,7 +4,7 @@ import './CreateSurvey.css';
 import { motion } from 'framer-motion';
 import axios from 'axios';
 
-export default function CreateSurvey({ addSurvey }) {
+export default function CreateSurvey() {
     const [surveyTitle, setSurveyTitle] = useState('');
     const [questions, setQuestions] = useState([{ question: '', options: [{ text: '' }, { text: '' }] }]);
 

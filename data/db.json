@@ -110,7 +110,6 @@
       ]
     },
     {
-<<<<<<< HEAD
       "id": "d932",
       "title": "wydad",
       "questions": [
@@ -122,26 +121,12 @@
             },
             {
               "text": "20"
-=======
-      "id": "415d",
-      "title": "ergeqrg ergeqrg",
-      "questions": [
-        {
-          "question": "eqrgqerg",
-          "options": [
-            {
-              "text": "qergeqrg"
-            },
-            {
-              "text": "qergeqrg"
->>>>>>> 9e8ca8c6b006bd3a8c3119a82056d430982d3ec3
             }
           ]
         }
       ]
     },
     {
-<<<<<<< HEAD
       "id": "3845",
       "title": "world cup 2030 morocco",
       "questions": [
@@ -170,26 +155,12 @@
             },
             {
               "text": ">18"
-=======
-      "id": "34b0",
-      "title": "sdfrverv",
-      "questions": [
-        {
-          "question": "erfver",
-          "options": [
-            {
-              "text": "rfverv"
-            },
-            {
-              "text": "300"
->>>>>>> 9e8ca8c6b006bd3a8c3119a82056d430982d3ec3
             }
           ]
         }
       ]
     },
     {
-<<<<<<< HEAD
       "id": "f3ad",
       "title": "ddd",
       "questions": [
@@ -198,26 +169,12 @@
           "options": [
             {
               "text": "ddd"
-=======
-      "id": "4bbc",
-      "title": "jkj",
-      "questions": [
-        {
-          "question": "nnnnnn",
-          "options": [
-            {
-              "text": "hhh"
-            },
-            {
-              "text": "gggg"
->>>>>>> 9e8ca8c6b006bd3a8c3119a82056d430982d3ec3
             }
           ]
         }
       ]
     },
     {
-<<<<<<< HEAD
       "id": "438d",
       "title": "dddddd",
       "questions": [
@@ -229,19 +186,23 @@
             },
             {
               "text": "ddddd"
-=======
-      "id": "f1cd",
-      "title": "hhh",
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ae53",
+      "title": "wydad casablanca",
       "questions": [
         {
-          "question": "gggg",
+          "question": "f1",
           "options": [
             {
-              "text": "h"
+              "text": "1937"
             },
             {
-              "text": "g"
->>>>>>> 9e8ca8c6b006bd3a8c3119a82056d430982d3ec3
+              "text": "2002"
             }
           ]
         }

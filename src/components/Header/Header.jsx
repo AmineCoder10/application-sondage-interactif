@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "../../assets/checkee.png";
 import { motion } from "framer-motion";

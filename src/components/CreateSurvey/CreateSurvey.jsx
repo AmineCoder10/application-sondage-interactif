@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container, Button, FormGroup, Row, Col } from 'reactstrap';
 import './CreateSurvey.css';
 import { motion } from 'framer-motion';
@@ -100,7 +100,6 @@ export default function CreateSurvey() {
             toast.success('Tha Survey Has Been Created');
             setSurveyTitle('');
             setSurveyDescription('');   
-            setSurveyImage(null);
             setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);
         } catch (error) {
             console.error('Error saving survey data:', error);

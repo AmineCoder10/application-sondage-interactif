@@ -27,7 +27,7 @@ function HomePage() {
 
           <a href="#cards" style={{ marginLeft: "30px" }}>
             <motion.button className="startSbutton" whileHover={{ scale: 1.1 }}>
-              SURVIES
+              SURVEYS
             </motion.button>
           </a>
         </div>

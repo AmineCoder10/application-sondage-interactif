@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import './HomePage.css'
 import { motion } from "framer-motion";
 import img from '../../assets/checked.png';
@@ -28,7 +27,7 @@ function HomePage() {
 
           <a href="#cards" style={{ marginLeft: "30px" }}>
             <motion.button className="startSbutton" whileHover={{ scale: 1.1 }}>
-              SURVIES
+              SURVEYS
             </motion.button>
           </a>
         </div>

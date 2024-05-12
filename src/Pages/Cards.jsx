@@ -3,7 +3,7 @@ import './Cards.css';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export default function Cards({titleSurvey, description }) {
+export default function Cards({ titleSurvey, description }) {
   return (
     <div>
       <div className="card" id="cards">

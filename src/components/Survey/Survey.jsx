@@ -1,3 +1,13 @@
+/**
+ * React component for displaying surveys.
+ * 
+ * Fetch survey data from a JSON Server API endpoint.
+ * Use the useEffect hook. It then renders the fetched survey
+ * data using the Cards component, which represents each survey as a card.
+ * 
+ */
+
+
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Cards from "../../Pages/Cards";

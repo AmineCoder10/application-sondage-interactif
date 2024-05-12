@@ -1,3 +1,11 @@
+/**
+ * React component displaying team members.
+ * 
+ * Renders a section showcasing team members' names, positions, and profile images.
+ * Utilizes Framer Motion for hover animations on social media icons.
+ */
+
+
 import React from 'react'
 import './OurTeam.css';
 import abdo from '../../assets/images/abdo.jpg';
@@ -8,7 +16,7 @@ import { motion } from 'framer-motion';
 
 
 
-const OurTeam = () => {
+export default function OurTeam (){
     
 const teamMembers = [
     {
@@ -68,5 +76,3 @@ const teamMembers = [
         </section>
     )
 }
-
-export default OurTeam

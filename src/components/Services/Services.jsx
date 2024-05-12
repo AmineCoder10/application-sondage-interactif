@@ -1,3 +1,10 @@
+/**
+ * React component rendering service cards with hover animations.
+ * 
+ * Uses data from 'ServicesData' to populate service information.
+ */
+
+
 import React from 'react';
 import './Services.css';
 import {motion} from 'framer-motion';

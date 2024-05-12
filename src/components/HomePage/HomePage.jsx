@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import './HomePage.css'
 import { motion } from "framer-motion";
 import img from '../../assets/checked.png';

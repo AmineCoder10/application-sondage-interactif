@@ -1,3 +1,15 @@
+/**
+ * React component for creating a survey.
+ * 
+ * Renders a form interface allowing users to create a survey.
+ * Users can input a survey title, description, and multiple questions with options.
+ * Add or remove questions and options.
+ * Sent the survey data to a JSON Server via HTTP POST request for storage.
+ * Error handling and toast notifications are included for user feedback.
+ * 
+ */
+
+
 import React, { useState } from 'react';
 import { Container, Button, FormGroup, Row, Col } from 'reactstrap';
 import './CreateSurvey.css';
@@ -10,16 +22,16 @@ export default function CreateSurvey() {
     const [surveyDescription, setSurveyDescription] = useState('');
     const [questions, setQuestions] = useState([{ question: '', options: [{ text: '' }, { text: '' }] }]);
 
-    const handleSurveyTitleChange = (event) => {
-        setSurveyTitle(event.target.value);
+    const handleSurveyTitleChange = (e) => {
+        setSurveyTitle(e.target.value);
     };
 
-    const handleSurveyDescriptionChange = (event) => {
-        setSurveyDescription(event.target.value);
+    const handleSurveyDescriptionChange = (e) => {
+        setSurveyDescription(e.target.value);
     };
     
-    const handleQuestionChange = (index, event) => {
-        const { value } = event.target;
+    const handleQuestionChange = (index, e) => {
+        const { value } = e.target;
         const newQuestions = [...questions];
         newQuestions[index].question = value;
         setQuestions(newQuestions);
@@ -31,8 +43,8 @@ export default function CreateSurvey() {
         setQuestions(newQuestions);
     };
 
-    const handleOptionChange = (questionIndex, optionIndex, event) => {
-        const { value } = event.target;
+    const handleOptionChange = (questionIndex, optionIndex, e) => {
+        const { value } = e.target;
         const newQuestions = [...questions];
         newQuestions[questionIndex].options[optionIndex].text = value;
         setQuestions(newQuestions);
@@ -100,7 +112,6 @@ export default function CreateSurvey() {
             toast.success('Tha Survey Has Been Created');
             setSurveyTitle('');
             setSurveyDescription('');   
-            setSurveyImage(null);
             setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);
         } catch (error) {
             console.error('Error saving survey data:', error);

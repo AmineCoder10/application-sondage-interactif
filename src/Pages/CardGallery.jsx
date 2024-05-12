@@ -1,3 +1,15 @@
+/**
+ * React component for displaying a gallery of survey cards.
+ * 
+ * Fetch survey data from a JSON Server API endpoint .
+ * mounting using the useEffect hook. It then renders a subset of the fetched.
+ * survey data as cards using the Cards component. 
+ * Users can click on a button to view all surveys.
+ * Framer Motion is used to animate the button on hover.
+ * 
+ */
+
+
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
 import { useState, useEffect } from "react";

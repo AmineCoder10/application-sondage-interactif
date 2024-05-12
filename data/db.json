@@ -1,208 +1,171 @@
 {
   "Surveys": [
     {
-      "id": "1",
-      "titleSurvey": "Football",
+      "id": "3",
+      "title": "Patient Satisfaction Survey",
+      "description": "We strive to provide excellent care to our patients. Please tell us about your recent experience at our healthcare facility.",
       "questions": [
         {
-          "titleQuestion": "who is the best player in the team ?",
-          "option1": "messi",
-          "option2": "neymar",
-          "option3": "suares"
+          "question": "How satisfied were you with the courtesy and professionalism of the staff?",
+          "options": [
+            {
+              "text": "Very satisfied"
+            },
+            {
+              "text": "Satisfied"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Dissatisfied"
+            }
+          ]
+        },
+        {
+          "question": "Did you feel well-informed about your treatment plan and options?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            },
+            {
+              "text": "Partially"
+            }
+          ]
+        },
+        {
+          "question": "How likely are you to return to our facility for future healthcare needs?",
+          "options": [
+            {
+              "text": "Very likely"
+            },
+            {
+              "text": "Likely"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Unlikely"
+            }
+          ]
         }
       ]
     },
     {
       "id": "2",
-      "titleSurvey": "Languages",
+      "title": "Employee Feedback Survey",
+      "description": "We value your input! Please take a few minutes to share your thoughts on your experience working at our company.",
       "questions": [
         {
-          "titleQuestion": "What is the prefered language ?",
-          "option1": "c#",
-          "option2": "python",
-          "option3": "js"
-        }
-      ]
-    },
-    {
-      "id": "2681",
-      "title": "sport",
-      "questions": [
-        {
-          "question": "what is the best player in the world ?",
+          "question": "How satisfied are you with your current role and responsibilities?",
           "options": [
             {
-              "text": "Messi"
+              "text": "Very satisfied"
             },
             {
-              "text": "Ronaldo"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "f8c9",
-      "title": "Gaming",
-      "questions": [
-        {
-          "question": "Best MOBA Game ?",
-          "options": [
-            {
-              "text": "LOL"
+              "text": "Satisfied"
             },
             {
-              "text": "DOTA"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "d484",
-      "title": "hgds",
-      "questions": [
-        {
-          "question": "sdhbjh",
-          "options": [
-            {
-              "text": "hjsb"
+              "text": "Neutral"
             },
             {
-              "text": "jhshda"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "c1ac",
-      "title": "hsdvskdb",
-      "questions": [
-        {
-          "question": "zgduysdu",
-          "options": [
-            {
-              "text": "kzbc"
-            },
-            {
-              "text": "pwoej"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3001",
-      "title": "kjbasdbljv",
-      "questions": [
-        {
-          "question": "jhsdvjva",
-          "options": [
-            {
-              "text": "ksdbfhba"
-            },
-            {
-              "text": "ksdfhiusg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "d932",
-      "title": "wydad",
-      "questions": [
-        {
-          "question": "winners",
-          "options": [
-            {
-              "text": "10"
-            },
-            {
-              "text": "20"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3845",
-      "title": "world cup 2030 morocco",
-      "questions": [
-        {
-          "question": "where are u from",
-          "options": [
-            {
-              "text": "usa"
-            },
-            {
-              "text": "uk"
-            },
-            {
-              "text": "spain"
-            },
-            {
-              "text": "other"
+              "text": "Dissatisfied"
             }
           ]
         },
         {
-          "question": "how old are u",
+          "question": "Do you feel valued and recognized for your contributions?",
           "options": [
             {
-              "text": "<18"
+              "text": "Strongly agree"
             },
             {
-              "text": ">18"
+              "text": "Agree"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Disagree"
+            }
+          ]
+        },
+        {
+          "question": "How would you rate the communication and transparency within the company?",
+          "options": [
+            {
+              "text": "Excellent"
+            },
+            {
+              "text": "Good"
+            },
+            {
+              "text": "Fair"
+            },
+            {
+              "text": "Poor"
             }
           ]
         }
       ]
     },
     {
-      "id": "f3ad",
-      "title": "ddd",
+      "id": "4",
+      "title": "Visitor Experience Survey",
+      "description": "Help us enhance the visitor experience in our city! Share your feedback about your recent trip and activities.",
       "questions": [
         {
-          "question": "ddd",
+          "question": "What was the primary purpose of your visit to our city?",
           "options": [
             {
-              "text": "ddd"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "438d",
-      "title": "dddddd",
-      "questions": [
-        {
-          "question": "ddddd",
-          "options": [
-            {
-              "text": "dddd"
+              "text": "Vacation"
             },
             {
-              "text": "ddddd"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ae53",
-      "title": "wydad casablanca",
-      "questions": [
-        {
-          "question": "f1",
-          "options": [
-            {
-              "text": "1937"
+              "text": "Business trip"
             },
             {
-              "text": "2002"
+              "text": "Family visit"
+            },
+            {
+              "text": "Other"
+            }
+          ]
+        },
+        {
+          "question": "Which attractions or activities did you enjoy the most during your trip?",
+          "options": [
+            {
+              "text": "Sightseeing tours"
+            },
+            {
+              "text": "Museum visits"
+            },
+            {
+              "text": "Outdoor adventures"
+            },
+            {
+              "text": "Shopping"
+            }
+          ]
+        },
+        {
+          "question": "How likely are you to recommend our city as a travel destination to others?",
+          "options": [
+            {
+              "text": "Very likely"
+            },
+            {
+              "text": "Likely"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Unlikely"
             }
           ]
         }

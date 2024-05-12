@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "../../assets/checkee.png";
 import { motion } from "framer-motion";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const nav__links = [
     {

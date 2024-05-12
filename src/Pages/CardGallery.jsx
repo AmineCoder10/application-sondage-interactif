@@ -1,24 +1,38 @@
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
-import { useState } from "react";
-import { cardsData } from "../data/data";
+import { useState, useEffect } from "react";
+import axios from 'axios';
 import { motion } from "framer-motion";
 
-
 export default function CardGallery() {
-
-
-
+  const [surveys, setSurveys] = useState([]);
   const [showAll, setShowAll] = useState(false);
 
-  const displayedCards = showAll ? cardsData : cardsData.slice(0, 3);
+  useEffect(() => {
+    async function fetchSurveys() {
+      try {
+        const response = await axios.get('http://localhost:3001/Surveys');
+        setSurveys(response.data);
+      } catch (error) {
+        console.error('Error fetching surveys:', error);
+      }
+    }
+
+    fetchSurveys();
+  }, []);
+
+  const displayedSurveys = showAll ? surveys : surveys.slice(0, 3);
 
   return (
     <>
       <div className="card-container">
         <div className="card-group">
-          {displayedCards.map((card, i) => (
-            <Cards key={i} title={card.title} description={card.description} />
+          {displayedSurveys.map((survey) => (
+            <Cards
+              key={survey.id}
+              titleSurvey={survey.title}
+              description={survey.description}
+            />
           ))}
           <Link to="/survey">
             {
@@ -30,6 +44,5 @@ export default function CardGallery() {
         </div>
       </div>
     </>
-
   );
 }

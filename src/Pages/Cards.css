@@ -1,16 +1,15 @@
 .card {
   margin-top: 50px;
-  width: 300px;
-  height: 250px;
+  width: 310px;
+  height: 310px;
   margin-right: 40px;
   margin-left: 80px;
   border-radius: 15px;
-  background: rgba(105, 13, 197, 0.103);
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  background-color: rgb(200, 215, 255);
+  border: 5px solid var(--hero-bg);
 }
 
 .card::before {
@@ -27,21 +26,17 @@
 }
 
 .text {
-  flex-grow: 1;
   padding: 15px;
-  display: flex;
-  flex-direction: column;
-  color: rgb(131, 149, 165);
-  font-weight: 900;
-  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.4em;
+  text-align: center;
 }
 
-
-
-.subtitle {
-  font-size: .6em;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.691);
+.description{
+  padding: 0 15px;
+  color: white;
+  font-weight: 500;
 }
 
 .icons {
@@ -94,12 +89,27 @@
   padding: 5px 10px;
   font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px; 
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0 8PX 8PX 0;
 }
+.reports-btn{
+  background-color: var(--primary-color);
+  color: white;
+  justify-items: center;
+  align-items: center;
+  padding: 5px 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0PX 8PX 8px;
+}
+
 
 
 .cubutton {
@@ -111,5 +121,5 @@
   margin-left: 30px;
   position: absolute;
   bottom: -20%;
-  right: 45%;
+  right: 43%;
 }

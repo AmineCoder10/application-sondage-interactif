@@ -3,15 +3,21 @@ import { Container, Button, FormGroup, Row, Col } from 'reactstrap';
 import './CreateSurvey.css';
 import { motion } from 'framer-motion';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 export default function CreateSurvey() {
     const [surveyTitle, setSurveyTitle] = useState('');
+    const [surveyDescription, setSurveyDescription] = useState('');
     const [questions, setQuestions] = useState([{ question: '', options: [{ text: '' }, { text: '' }] }]);
 
     const handleSurveyTitleChange = (event) => {
         setSurveyTitle(event.target.value);
     };
 
+    const handleSurveyDescriptionChange = (event) => {
+        setSurveyDescription(event.target.value);
+    };
+    
     const handleQuestionChange = (index, event) => {
         const { value } = event.target;
         const newQuestions = [...questions];
@@ -38,7 +44,7 @@ export default function CreateSurvey() {
             newQuestions[questionIndex].options.push({ text: '' });
             setQuestions(newQuestions);
         } else {
-            alert("You can't add more than 4 options!");
+            toast.warning("You can't add more than 4 options!");
         }
     };
 
@@ -56,48 +62,54 @@ export default function CreateSurvey() {
     const handleCreateSurvey = async () => {
         // Check if survey title is empty
         if (surveyTitle.trim() === '') {
-            alert("Survey title cannot be empty");
-            return; // Exit function early
+            toast.warning("Survey title cannot be empty");
+            return;
         }
-    
+        // Check if survey description is empty
+        if (surveyDescription.trim() === '') {
+            toast.warning("Survey description cannot be empty");
+            return;
+        }
+
         // Check if any question is empty
         const emptyQuestionIndex = questions.findIndex(q => q.question.trim() === '');
         if (emptyQuestionIndex !== -1) {
-            alert(`Question ${emptyQuestionIndex + 1} cannot be empty`);
-            return; // Exit function early
+            toast.warning(`Question ${emptyQuestionIndex + 1} cannot be empty`);
+            return;
         }
-    
+
         // Check if any option within any question is empty
         const emptyOptionIndex = questions.findIndex(q => q.options.some(o => o.text.trim() === ''));
         if (emptyOptionIndex !== -1) {
             const emptyQuestion = questions[emptyOptionIndex];
             const emptyOption = emptyQuestion.options.find(o => o.text.trim() === '');
             const emptyOptionIndexWithinQuestion = emptyQuestion.options.indexOf(emptyOption);
-            alert(`Option ${emptyOptionIndexWithinQuestion + 1} of Question ${emptyOptionIndex + 1} cannot be empty`);
-            return; // Exit function early
+            toast.warning(`Option ${emptyOptionIndexWithinQuestion + 1} of Question ${emptyOptionIndex + 1} cannot be empty`);
+            return;
         }
-    
+
         try {
             // Save survey data to JSON Server
             const response = await axios.post('http://localhost:3001/Surveys', {
                 title: surveyTitle,
+                description: surveyDescription,
                 questions
             });
-    
-            // Handle successful response
+
             console.log('Survey data saved:', response.data);
-            // Clear the form fields
+            toast.success('Tha Survey Has Been Created');
             setSurveyTitle('');
+            setSurveyDescription('');   
+            setSurveyImage(null);
             setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);
         } catch (error) {
-            // Handle error
             console.error('Error saving survey data:', error);
         }
     };
-    
+
 
     return (
-        <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", borderRadius: "20px" }}>
+        <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", marginBottom:"70px", borderRadius: "20px" }}>
             <div className='form'>
                 <h1 className="mb-4 survey-title">Create Survey</h1>
                 <Row>
@@ -110,6 +122,17 @@ export default function CreateSurvey() {
                                 onChange={handleSurveyTitleChange}
                             />
                             <span>Survey Title</span>
+                        </div>
+                    </Col>
+                    <Col lg="5">
+                        <div className="formField">
+                            <input
+                                type="text"
+                                required
+                                value={surveyDescription}
+                                onChange={handleSurveyDescriptionChange}
+                            />
+                            <span>Survey Description</span>
                         </div>
                     </Col>
                 </Row>
@@ -127,7 +150,7 @@ export default function CreateSurvey() {
                                     />
                                     <span>Question {questionIndex + 1}</span>
                                     {questionIndex > 0 &&
-                                        <i className="ri-delete-bin-line question-delete-icon" onClick={() => removeQuestion(questionIndex)} style={{cursor:"pointer" , marginLeft:"5px"}}></i>
+                                        <i className="ri-delete-bin-line question-delete-icon" onClick={() => removeQuestion(questionIndex)} style={{ cursor: "pointer", marginLeft: "5px" }}></i>
                                     }
                                 </div>
                             </Col>
@@ -145,7 +168,7 @@ export default function CreateSurvey() {
                                                 onChange={(e) => handleOptionChange(questionIndex, optionIndex, e)}
                                             />
                                             {optionIndex > 0 &&
-                                                <i className="ri-delete-bin-line" onClick={() => removeOption(questionIndex, optionIndex)} style={{ marginLeft:"5px", cursor:"pointer"}}></i>}
+                                                <i className="ri-delete-bin-line" onClick={() => removeOption(questionIndex, optionIndex)} style={{ marginLeft: "5px", cursor: "pointer" }}></i>}
                                         </div>
                                     </FormGroup>
                                 ))}
@@ -164,9 +187,8 @@ export default function CreateSurvey() {
                     </Col>
                 </Row>
             </div>
-            <div className='collect-btn' style={{ position: "absolute", top: "0", right: "0", marginRight: "80px", marginTop: "20px" }}>
-                <Button className=" collect-btn" onClick={handleCreateSurvey} style={{ width: "170%", backgroundColor: "#0a1d37" }}>Collect</Button>
-            </div>
-        </Container>
-    );
+            <motion.div className='collect-btn' whileHover={{ scale: 1.05 }} style={{ position: "absolute", top: "0", right: "-1.8%", marginRight: "80px", marginTop: "20px" }}>
+                <Button className=" collect-btn" onClick={handleCreateSurvey} style={{ backgroundColor: "#0a1d37" }}>Collect</Button>
+            </motion.div>
+        </Container>);
 }

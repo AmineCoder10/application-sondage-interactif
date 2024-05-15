@@ -34,6 +34,7 @@ export default function Survey() {
         {surveys.map((survey) => (
           <Cards
           key={survey.id}
+          id={survey.id}
           titleSurvey={survey.title}
           description={survey.description}
         />

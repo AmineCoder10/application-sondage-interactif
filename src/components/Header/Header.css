@@ -26,6 +26,7 @@
   font-weight: 700;
   color: var(--primary-color);
   margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .nav__list {

@@ -3,7 +3,7 @@ import './Cards.css';
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export default function Cards({ titleSurvey, description }) {
+export default function Cards({ titleSurvey, description ,id}) {
   return (
     <div>
       <div className="card" id="cards">
@@ -14,7 +14,7 @@ export default function Cards({ titleSurvey, description }) {
           <p>{description}</p>
         </div>
         <div className="icons">
-          <Link to="/survey">
+          <Link to={`/surveyForm/${id}`}>
             <motion.button
               className="custom-button"
               whileHover={{ scale: 1.08 }}

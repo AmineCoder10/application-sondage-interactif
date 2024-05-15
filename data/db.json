@@ -171,8 +171,8 @@
         }
       ]
     },
+
     {
-<<<<<<< HEAD
       "id": "767d",
       "title": "qsfoijqdf",
       "description": "qdkjfnqef",
@@ -185,38 +185,6 @@
             },
             {
               "text": "E"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "d390",
-      "title": "etggdgrqd",
-      "description": "aedqefdcqescdf",
-      "questions": [
-        {
-          "question": "zefzefdzef",
-          "options": [
-            {
-              "text": "Zzzz"
-            },
-            {
-              "text": "Eeeeee"
-=======
-      "id": "34b2",
-      "title": "Sports",
-      "description": "User Sport Feedback",
-      "questions": [
-        {
-          "question": "do you play football ?",
-          "options": [
-            {
-              "text": "yes"
-            },
-            {
-              "text": "no"
->>>>>>> c38200fa87539b8c0dc8bf889e3dd3561beab241
             }
           ]
         }

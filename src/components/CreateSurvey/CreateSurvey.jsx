@@ -9,12 +9,8 @@
  * 
  */
 
-<<<<<<< HEAD
 
 import { useState } from 'react';
-=======
-import React, { useState } from 'react';
->>>>>>> c38200fa87539b8c0dc8bf889e3dd3561beab241
 import { Container, Button, FormGroup, Row, Col } from 'reactstrap';
 import './CreateSurvey.css';
 import { motion } from 'framer-motion';

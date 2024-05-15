@@ -6,6 +6,10 @@
     margin-bottom: 50px;
 }
 
+h2{
+    margin-top: 20px;
+}
+
 .team__item{
     width: 25%;
     background: var(--primary-color);

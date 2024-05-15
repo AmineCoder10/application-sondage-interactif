@@ -1,0 +1,18 @@
+.Form-desc {
+    margin-top: 50px;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+h2 {
+    margin: -30px 0 50px 0;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.demo{
+    display: flex;
+    flex-direction: column;
+}

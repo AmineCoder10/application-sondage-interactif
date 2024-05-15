@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import SurveyForm from './components/SurveyForm/SurveyForm';
 import OurTeam from './components/OurTeam/OurTeam';
+import Respons from './components/Respons/Respons';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path='/home' element={<HomePage />} />
         <Route path='/create' element={<CreateSurvey />} />
         <Route path='/survey' element={<Survey />} />
-        <Route path='/survey/:id' element={<SurveyForm />} />
+        <Route path='/surveyForm/:id' element={<SurveyForm />} />
+        <Route path='/reports' element={<Respons />} />
         <Route path='/ourteam' element={<OurTeam />} />
       </Routes>
       <ToastContainer

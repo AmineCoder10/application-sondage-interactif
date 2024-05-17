@@ -56,116 +56,61 @@
       ]
     },
     {
-      "id": "2",
-      "title": "Employee Feedback Survey",
-      "description": "We value your input! Please take a few minutes to share your thoughts on your experience working at our company.",
+      "id": "88fc",
+      "title": "Gaming",
+      "description": "its a survey for gaming ",
       "questions": [
         {
-          "question": "How satisfied are you with your current role and responsibilities?",
+          "question": "best moba game?",
           "options": [
             {
-              "text": "Very satisfied"
+              "text": "LOL"
             },
             {
-              "text": "Satisfied"
+              "text": "DOTA"
             },
             {
-              "text": "Neutral"
-            },
-            {
-              "text": "Dissatisfied"
+              "text": "MOBILE LEGEND"
             }
           ]
         },
         {
-          "question": "Do you feel valued and recognized for your contributions?",
+          "question": "Best sport game",
           "options": [
             {
-              "text": "Strongly agree"
+              "text": "FIFA"
             },
             {
-              "text": "Agree"
-            },
-            {
-              "text": "Neutral"
-            },
-            {
-              "text": "Disagree"
+              "text": "PES"
             }
           ]
         },
         {
-          "question": "How would you rate the communication and transparency within the company?",
+          "question": "Best MMORPG GAME?",
           "options": [
             {
-              "text": "Excellent"
+              "text": "M&B"
             },
             {
-              "text": "Good"
-            },
-            {
-              "text": "Fair"
-            },
-            {
-              "text": "Poor"
+              "text": "D&D"
             }
           ]
         }
       ]
     },
     {
-      "id": "4",
-      "title": "Visitor Experience Survey",
-      "description": "Help us enhance the visitor experience in our city! Share your feedback about your recent trip and activities.",
+      "id": "6832",
+      "title": "wydad",
+      "description": "wydad",
       "questions": [
         {
-          "question": "What was the primary purpose of your visit to our city?",
+          "question": "wydad",
           "options": [
             {
-              "text": "Vacation"
+              "text": "ah"
             },
             {
-              "text": "Business trip"
-            },
-            {
-              "text": "Family visit"
-            },
-            {
-              "text": "Other"
-            }
-          ]
-        },
-        {
-          "question": "Which attractions or activities did you enjoy the most during your trip?",
-          "options": [
-            {
-              "text": "Sightseeing tours"
-            },
-            {
-              "text": "Museum visits"
-            },
-            {
-              "text": "Outdoor adventures"
-            },
-            {
-              "text": "Shopping"
-            }
-          ]
-        },
-        {
-          "question": "How likely are you to recommend our city as a travel destination to others?",
-          "options": [
-            {
-              "text": "Very likely"
-            },
-            {
-              "text": "Likely"
-            },
-            {
-              "text": "Neutral"
-            },
-            {
-              "text": "Unlikely"
+              "text": "la"
             }
           ]
         }
@@ -173,6 +118,7 @@
     },
 
     {
+<<<<<<< HEAD
       "id": "767d",
       "title": "qsfoijqdf",
       "description": "qdkjfnqef",
@@ -185,10 +131,273 @@
             },
             {
               "text": "E"
+=======
+      "id": "cc46",
+      "title": "svfhfsuy",
+      "description": "jhsbjsguy",
+      "questions": [
+        {
+          "question": "kshigsftu",
+          "options": [
+            {
+              "text": "jshgyu"
+            },
+            {
+              "text": "suyi"
             }
           ]
         }
       ]
+    },
+    {
+      "id": "ffcf",
+      "title": "Sports Survey",
+      "description": "General sports survey questions help you understand the skills and genuine interest of the survey taker in sports. The type of sport doesn’t really matter here.",
+      "questions": [
+        {
+          "question": "Do you play sports at all?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            }
+          ]
+        },
+        {
+          "question": "Do you consider yourself good at any sport?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            }
+          ]
+        },
+        {
+          "question": "Have you participated in school sport events?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            }
+          ]
+        },
+        {
+          "question": "In a week, how often do you play any sport?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            }
+          ]
+        },
+        {
+          "question": "Who’s your favorite professional athlete?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            }
+          ]
+        },
+        {
+          "question": "What’s the most expensive sport, according to you?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            }
+          ]
+        },
+        {
+          "question": "If given a choice, what sport would you like to try professionally?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            }
+          ]
+        },
+        {
+          "question": "Which sport do you think you’ll be good at professionally? ",
+          "options": [
+            {
+              "text": "Football"
+            },
+            {
+              "text": "Tennis"
+            },
+            {
+              "text": "Basketball"
+            }
+          ]
+        },
+        {
+          "question": "What sports do you like watching live?",
+          "options": [
+            {
+              "text": "Football"
+            },
+            {
+              "text": "BasketBall"
+            },
+            {
+              "text": "HandBall"
+>>>>>>> d5a73650721ac05f071f1a8ddb17d46028f5a04f
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Answers": [
+    {
+      "surveyId": "3",
+      "responses": [
+        {
+          "question": "How satisfied were you with the courtesy and professionalism of the staff?",
+          "answer": "Very satisfied"
+        },
+        {
+          "question": "Did you feel well-informed about your treatment plan and options?",
+          "answer": "Yes"
+        },
+        {
+          "question": "How likely are you to return to our facility for future healthcare needs?",
+          "answer": "Very likely"
+        }
+      ],
+      "id": "dab1"
+    },
+    {
+      "id": "21d1",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "No",
+        "2": "Neutral"
+      }
+    },
+    {
+      "id": "5608",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "Partially",
+        "2": "Unlikely"
+      }
+    },
+    {
+      "id": "c3a9",
+      "surveyId": "88fc",
+      "responses": {
+        "0": "LOL",
+        "1": "FIFA",
+        "2": "D&D"
+      }
+    },
+    {
+      "id": "2b9d",
+      "surveyId": "88fc",
+      "responses": {
+        "0": "DOTA",
+        "1": "PES",
+        "2": "M&B"
+      }
+    },
+    {
+      "id": "eff8",
+      "surveyId": "3",
+      "responses": {
+        "0": "Satisfied",
+        "1": "No",
+        "2": "Likely"
+      }
+    },
+    {
+      "id": "e33a",
+      "surveyId": "3",
+      "responses": {
+        "0": "Satisfied",
+        "1": "No",
+        "2": "Likely"
+      }
+    },
+    {
+      "id": "3cc3",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "Yes",
+        "2": "Very likely"
+      }
+    },
+    {
+      "id": "1b74",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "Yes",
+        "2": "Very likely"
+      }
+    },
+    {
+      "id": "2a3b",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "Yes",
+        "2": "Very likely"
+      }
+    },
+    {
+      "id": "5dec",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "No",
+        "2": "Very likely"
+      }
+    },
+    {
+      "id": "cb6d",
+      "surveyId": "3",
+      "responses": {
+        "0": "Satisfied",
+        "1": "No",
+        "2": "Neutral"
+      }
+    },
+    {
+      "id": "4e84",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "No",
+        "2": "Likely"
+      }
+    },
+    {
+      "id": "3ca0",
+      "surveyId": "88fc",
+      "responses": {
+        "0": "LOL",
+        "1": "PES",
+        "2": "D&D"
+      }
     }
   ]
 }

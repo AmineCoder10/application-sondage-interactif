@@ -105,7 +105,7 @@ export default function CreateSurvey() {
             });
 
             console.log('Survey data saved:', response.data);
-            toast.success('Tha Survey Has Been Created');
+            toast.success('The Survey Has Been Created');
             setSurveyTitle('');
             setSurveyDescription('');
             setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);

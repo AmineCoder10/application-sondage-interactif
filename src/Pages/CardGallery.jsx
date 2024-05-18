@@ -33,7 +33,7 @@ export default function CardGallery() {
     fetchSurveys();
   }, []);
 
-  const displayedSurveys = showAll ? surveys : surveys.slice(0, 3);
+  const displayedSurveys = showAll ? surveys : surveys.slice(-3);
 
   return (
     <>

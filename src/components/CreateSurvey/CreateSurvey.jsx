@@ -194,7 +194,7 @@ export default function CreateSurvey() {
                     </Col>
                 </Row>
             </div>
-            <motion.div className='collect-btn' whileHover={{ scale: 1.05 }} style={{ position: "absolute", top: "0", right: "-1.8%", marginRight: "80px", marginTop: "20px" }}>
+            <motion.div className='collect-btn' whileHover={{ scale: 1.05 }} style={{ position: "absolute", top: "0", right: "-1.8%", marginRight: "80px", marginTop: "20px", paddingRight: "10px", paddingTop: "4px", paddingLeft: "10px", paddingBottom: "4px"}}>
                 <Button className=" collect-btn" onClick={handleCreateSurvey} style={{ backgroundColor: "#0a1d37" }}>Collect</Button>
             </motion.div>
         </Container>);

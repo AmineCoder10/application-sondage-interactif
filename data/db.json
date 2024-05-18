@@ -116,7 +116,6 @@
         }
       ]
     },
-
     {
       "id": "cc46",
       "title": "svfhfsuy",
@@ -524,6 +523,15 @@
       },
       "age": "45+",
       "gender": "Female"
+    },
+    {
+      "id": "0aae",
+      "surveyId": "60b6",
+      "responses": {
+        "0": "bayern"
+      },
+      "age": "18-25",
+      "gender": "Male"
     }
   ]
 }

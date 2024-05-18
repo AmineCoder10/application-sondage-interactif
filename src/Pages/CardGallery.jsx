@@ -81,6 +81,7 @@ export default function CardGallery() {
 
   const displayedSurveys = showAll ? surveys : surveys.slice(-3); // Updated line
 
+
   return (
     <>
       <div className="card-container">

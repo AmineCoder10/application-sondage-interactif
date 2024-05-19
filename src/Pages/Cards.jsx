@@ -1,9 +1,9 @@
 import React from "react";
-import './Cards.css';
+import "./Cards.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export default function Cards({ titleSurvey, description ,id}) {
+export default function Cards({ id, titleSurvey, description }) {
   return (
     <div>
       <div className="card" id="cards">
@@ -22,11 +22,8 @@ export default function Cards({ titleSurvey, description ,id}) {
               Preview
             </motion.button>
           </Link>
-          <Link to="/survey">
-            <motion.button
-              className="reports-btn"
-              whileHover={{ scale: 1.08 }}
-            >
+          <Link to={`/SurveyReport/${id}`}>
+            <motion.button className="reports-btn" whileHover={{ scale: 1.08 }}>
               Reports
             </motion.button>
           </Link>

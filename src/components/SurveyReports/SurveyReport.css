@@ -2,18 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
 }
 
 .chartStyle{
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin: 60px;
 }
 
 .GenderAndAge{
   display: flex;
   justify-content: space-between;
+}
+
+.flex-Questions{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .optionsStyles{

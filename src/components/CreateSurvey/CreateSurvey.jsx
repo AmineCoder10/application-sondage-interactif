@@ -16,11 +16,14 @@ import './CreateSurvey.css';
 import { motion } from 'framer-motion';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import BackButton from '../UI/BackButton';
+import { useNavigate } from 'react-router-dom';
 
 export default function CreateSurvey() {
     const [surveyTitle, setSurveyTitle] = useState('');
     const [surveyDescription, setSurveyDescription] = useState('');
     const [questions, setQuestions] = useState([{ question: '', options: [{ text: '' }, { text: '' }] }]);
+    const Navigate = useNavigate();
 
     const handleSurveyTitleChange = (e) => {
         setSurveyTitle(e.target.value);
@@ -107,6 +110,7 @@ export default function CreateSurvey() {
 
             console.log('Survey data saved:', response.data);
             toast.success('The Survey Has Been Created');
+            Navigate('/survey');
             setSurveyTitle('');
             setSurveyDescription('');
             setQuestions([{ question: '', options: [{ text: '' }, { text: '' }] }]);
@@ -117,86 +121,92 @@ export default function CreateSurvey() {
 
 
     return (
-        <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", marginBottom: "70px", borderRadius: "20px" }}>
-            <div className='form'>
-                <h1 className="mb-4 survey-title">Create Survey</h1>
-                <Row>
-                    <Col lg="5">
-                        <div className="formField">
-                            <input
-                                type="text"
-                                required
-                                value={surveyTitle}
-                                onChange={handleSurveyTitleChange}
-                            />
-                            <span>Survey Title</span>
-                        </div>
-                    </Col>
-                    <Col lg="5">
-                        <div className="formField">
-                            <input
-                                type="text"
-                                required
-                                value={surveyDescription}
-                                onChange={handleSurveyDescriptionChange}
-                            />
-                            <span>Survey Description</span>
-                        </div>
-                    </Col>
-                </Row>
+        <div>
+            <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", marginBottom: "70px", borderRadius: "20px" }}>
+                <div className='form'>
+                    <h1 className="mb-4 survey-title">Create Survey</h1>
+                    <Row>
+                        <Col lg="5">
+                            <div className="formField">
+                                <input
+                                    type="text"
+                                    required
+                                    value={surveyTitle}
+                                    onChange={handleSurveyTitleChange}
+                                />
+                                <span>Survey Title</span>
+                            </div>
+                        </Col>
+                        <Col lg="5">
+                            <div className="formField">
+                                <input
+                                    type="text"
+                                    required
+                                    value={surveyDescription}
+                                    onChange={handleSurveyDescriptionChange}
+                                />
+                                <span>Survey Description</span>
+                            </div>
+                        </Col>
+                    </Row>
 
-                {questions.map((question, questionIndex) => (
-                    <div key={questionIndex} className="mt-4 test">
-                        <Row>
-                            <Col lg="5">
-                                <div className="formField">
-                                    <input
-                                        type="text"
-                                        required
-                                        value={question.question}
-                                        onChange={(e) => handleQuestionChange(questionIndex, e)}
-                                    />
-                                    <span>Question {questionIndex + 1}</span>
-                                    {questionIndex > 0 &&
-                                        <i className="ri-delete-bin-line question-delete-icon" onClick={() => removeQuestion(questionIndex)} style={{ cursor: "pointer", marginLeft: "5px" }}></i>
-                                    }
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-2">
-                            <Col lg="3">
-                                {question.options.map((option, optionIndex) => (
-                                    <FormGroup key={optionIndex} check>
-                                        <div className='search'>
-                                            <input
-                                                type="text"
-                                                required
-                                                placeholder={`Enter option ${optionIndex + 1}`}
-                                                value={option.text}
-                                                onChange={(e) => handleOptionChange(questionIndex, optionIndex, e)}
-                                            />
-                                            {optionIndex > 0 &&
-                                                <i className="ri-delete-bin-line" onClick={() => removeOption(questionIndex, optionIndex)} style={{ marginLeft: "5px", cursor: "pointer" }}></i>}
-                                        </div>
-                                    </FormGroup>
-                                ))}
-                            </Col>
-                        </Row>
-                        <Row className="mt-2">
-                            <Col>
-                                <motion.button className='add-option-btn' onClick={() => addOption(questionIndex)} whileHover={{ scale: 1.05 }}>Add Option</motion.button>
-                            </Col>
-                        </Row>
-                    </div>
-                ))}
-                <Row className="mt-4">
-                    <Col>
-                        <motion.button className='add-q-btn' onClick={addQuestion} whileHover={{ scale: 1.05 }}>Add Question</motion.button>
-                    </Col>
-                </Row>
-            </div>
-            <motion.div className='collect-btn' whileHover={{ scale: 1.05 }} style={{ position: "absolute", top: "0", right: "-1.8%", marginRight: "80px", marginTop: "20px", paddingRight: "10px", paddingTop: "4px", paddingLeft: "10px", paddingBottom: "4px"}}>
-                <Button className=" collect-btn" onClick={handleCreateSurvey} style={{ backgroundColor: "#0a1d37" }}>Collect</Button>
-            </motion.div>
-        </Container>);
+                    {questions.map((question, questionIndex) => (
+                        <div key={questionIndex} className="mt-4 test">
+                            <Row>
+                                <Col lg="5">
+                                    <div className="formField">
+                                        <input
+                                            type="text"
+                                            required
+                                            value={question.question}
+                                            onChange={(e) => handleQuestionChange(questionIndex, e)}
+                                        />
+                                        <span>Question {questionIndex + 1}</span>
+                                        {questionIndex > 0 &&
+                                            <i className="ri-delete-bin-line question-delete-icon" onClick={() => removeQuestion(questionIndex)} style={{ cursor: "pointer", marginLeft: "5px" }}></i>
+                                        }
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row className="mt-2">
+                                <Col lg="3">
+                                    {question.options.map((option, optionIndex) => (
+                                        <FormGroup key={optionIndex} check>
+                                            <div className='search'>
+                                                <input
+                                                    type="text"
+                                                    required
+                                                    placeholder={`Enter option ${optionIndex + 1}`}
+                                                    value={option.text}
+                                                    onChange={(e) => handleOptionChange(questionIndex, optionIndex, e)}
+                                                />
+                                                {optionIndex > 0 &&
+                                                    <i className="ri-delete-bin-line" onClick={() => removeOption(questionIndex, optionIndex)} style={{ marginLeft: "5px", cursor: "pointer" }}></i>}
+                                            </div>
+                                        </FormGroup>
+                                    ))}
+                                </Col>
+                            </Row>
+                            <Row className="mt-2">
+                                <Col>
+                                    <motion.button className='add-option-btn' onClick={() => addOption(questionIndex)} whileHover={{ scale: 1.05 }}>Add Option</motion.button>
+                                </Col>
+                            </Row>
+                        </div>
+                    ))}
+                    <Row className="mt-4">
+                        <Col>
+                            <motion.button className='add-q-btn' onClick={addQuestion} whileHover={{ scale: 1.05 }}>Add Question</motion.button>
+                        </Col>
+                    </Row>
+                </div>
+                <motion.div className='collect-btn' whileHover={{ scale: 1.05 }} style={{ position: "absolute", top: "0", right: "-1.8%", marginRight: "80px", marginTop: "20px", paddingRight: "10px", paddingTop: "4px", paddingLeft: "10px", paddingBottom: "4px" }}>
+                    <Button className=" collect-btn" onClick={handleCreateSurvey} style={{ backgroundColor: "#0a1d37" }}>Collect</Button>
+                </motion.div>
+            </Container>;
+            <BackButton style={{ position: "absolute", top: "11%", left: "7%", marginRight: "80px", marginTop: "20px", paddingRight: "30px", paddingTop: "8px", paddingLeft: "30px", paddingBottom: "8px" }} />
+
+        </div>
+    )
+
 }

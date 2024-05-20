@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Cards from "../../Pages/Cards";
+import BackButton from "../UI/BackButton";
 
 export default function Survey() {
   const [surveys, setSurveys] = useState([]);
@@ -21,7 +22,7 @@ export default function Survey() {
   return (
     <div
       className="card-container"
-      style={{ marginLeft: "5%", marginBottom: "50px", marginTop: "30px" }}
+      style={{ marginLeft: "5%", marginBottom: "50px", marginTop: "50px" }}
     >
       <div className="card-group">
         {surveys.map((survey) => (
@@ -34,6 +35,8 @@ export default function Survey() {
           />
         ))}
       </div>
+      <BackButton style={{ position: "absolute", top: "-5%", left: "6%", marginRight: "80px", marginTop: "20px", paddingRight: "30px", paddingTop: "8px", paddingLeft: "30px", paddingBottom: "8px" }} />
+
     </div>
   );
 }

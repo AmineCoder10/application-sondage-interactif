@@ -99,220 +99,76 @@
       ]
     },
     {
-      "id": "6832",
-      "title": "wydad",
-      "description": "wydad",
+      "id": "4",
+      "title": "Football World Cup 2030 Survey",
+      "description": "We are excited about the upcoming Football World Cup 2030 in Morocco! Please share your thoughts and expectations about the event.",
       "questions": [
         {
-          "question": "wydad",
+          "question": "How excited are you about the Football World Cup 2030 in Morocco?",
           "options": [
             {
-              "text": "ah"
+              "text": "Very excited"
             },
             {
-              "text": "la"
+              "text": "Excited"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Not excited"
+            }
+          ]
+        },
+        {
+          "question": "is hosting the World Cup will have a positive impact on Morocco's economy?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            },
+            {
+              "text": "Not sure"
+            }
+          ]
+        },
+        {
+          "question": "How likely are you to attend a match in Morocco during the World Cup?",
+          "options": [
+            {
+              "text": "Very likely"
+            },
+            {
+              "text": "Likely"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Unlikely"
             }
           ]
         }
       ]
     },
     {
-      "id": "cc46",
-      "title": "svfhfsuy",
-      "description": "jhsbjsguy",
+      "id": "28ac",
+      "title": "sport",
+      "description": "about sport",
       "questions": [
         {
-          "question": "kshigsftu",
+          "question": "which sport do u play ?",
           "options": [
             {
-              "text": "jshgyu"
+              "text": "football"
             },
             {
-              "text": "suyi"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ffcf",
-      "title": "Sports Survey",
-      "description": "General sports survey questions help you understand the skills and genuine interest of the survey taker in sports. The type of sport doesn’t really matter here.",
-      "questions": [
-        {
-          "question": "Do you play sports at all?",
-          "options": [
-            {
-              "text": "Yes"
+              "text": "tennis"
             },
             {
-              "text": "No"
-            }
-          ]
-        },
-        {
-          "question": "Do you consider yourself good at any sport?",
-          "options": [
-            {
-              "text": "Yes"
-            },
-            {
-              "text": "No"
-            }
-          ]
-        },
-        {
-          "question": "Have you participated in school sport events?",
-          "options": [
-            {
-              "text": "Yes"
-            },
-            {
-              "text": "No"
-            }
-          ]
-        },
-        {
-          "question": "In a week, how often do you play any sport?",
-          "options": [
-            {
-              "text": "Yes"
-            },
-            {
-              "text": "No"
-            }
-          ]
-        },
-        {
-          "question": "Who’s your favorite professional athlete?",
-          "options": [
-            {
-              "text": "Yes"
-            },
-            {
-              "text": "No"
-            }
-          ]
-        },
-        {
-          "question": "What’s the most expensive sport, according to you?",
-          "options": [
-            {
-              "text": "Yes"
-            },
-            {
-              "text": "No"
-            }
-          ]
-        },
-        {
-          "question": "If given a choice, what sport would you like to try professionally?",
-          "options": [
-            {
-              "text": "Yes"
-            },
-            {
-              "text": "No"
-            }
-          ]
-        },
-        {
-          "question": "Which sport do you think you’ll be good at professionally? ",
-          "options": [
-            {
-              "text": "Football"
-            },
-            {
-              "text": "Tennis"
-            },
-            {
-              "text": "Basketball"
-            }
-          ]
-        },
-        {
-          "question": "What sports do you like watching live?",
-          "options": [
-            {
-              "text": "Football"
-            },
-            {
-              "text": "BasketBall"
-            },
-            {
-              "text": "HandBall"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "bef3",
-      "title": "fffffff",
-      "description": "fffffffff",
-      "questions": [
-        {
-          "question": "aaaaaaa",
-          "options": [
-            {
-              "text": "aaaaaaaaaaa"
-            },
-            {
-              "text": "aaaaaaaaaaa"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "60b6",
-      "title": "bbbbbbbb",
-      "description": "bvb",
-      "questions": [
-        {
-          "question": "bvb",
-          "options": [
-            {
-              "text": "dortmund"
-            },
-            {
-              "text": "bayern"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "575c",
-      "title": "jhazdhd",
-      "description": "jdghudg",
-      "questions": [
-        {
-          "question": "jkdhuidh",
-          "options": [
-            {
-              "text": "djkhd"
-            },
-            {
-              "text": "jhdjhd"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "4e90",
-      "title": "skfjhsd",
-      "description": "sdcvsdv sdvsrdv srv",
-      "questions": [
-        {
-          "question": "what is these",
-          "options": [
-            {
-              "text": "EEEEeee"
-            },
-            {
-              "text": "EEEEEee"
+              "text": "Other"
             }
           ]
         }
@@ -339,392 +195,118 @@
       "id": "dab1"
     },
     {
-      "id": "21d1",
-      "surveyId": "3",
+      "id": "ff59",
+      "surveyId": "4",
       "responses": {
-        "0": "Very satisfied",
-        "1": "No",
-        "2": "Neutral"
-      }
-    },
-    {
-      "id": "5608",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
-        "1": "Partially",
-        "2": "Unlikely"
-      }
-    },
-    {
-      "id": "c3a9",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "LOL",
-        "1": "FIFA",
-        "2": "D&D"
-      }
-    },
-    {
-      "id": "2b9d",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "DOTA",
-        "1": "PES",
-        "2": "M&B"
-      }
-    },
-    {
-      "id": "eff8",
-      "surveyId": "3",
-      "responses": {
-        "0": "Satisfied",
-        "1": "No",
+        "0": "Excited",
+        "1": "Yes",
         "2": "Likely"
-      }
+      },
+      "age": "18-25",
+      "gender": "Male"
     },
     {
-      "id": "e33a",
-      "surveyId": "3",
+      "id": "13f0",
+      "surveyId": "4",
       "responses": {
-        "0": "Satisfied",
-        "1": "No",
-        "2": "Likely"
-      }
-    },
-    {
-      "id": "3cc3",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
+        "0": "Very excited",
         "1": "Yes",
         "2": "Very likely"
-      }
-    },
-    {
-      "id": "1b74",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
-        "1": "Yes",
-        "2": "Very likely"
-      }
-    },
-    {
-      "id": "2a3b",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
-        "1": "Yes",
-        "2": "Very likely"
-      }
-    },
-    {
-      "id": "5dec",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
-        "1": "No",
-        "2": "Very likely"
-      }
-    },
-    {
-      "id": "cb6d",
-      "surveyId": "3",
-      "responses": {
-        "0": "Satisfied",
-        "1": "No",
-        "2": "Neutral"
-      }
-    },
-    {
-      "id": "4e84",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
-        "1": "No",
-        "2": "Likely"
-      }
-    },
-    {
-      "id": "3ca0",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "LOL",
-        "1": "PES",
-        "2": "D&D"
-      }
-    },
-    {
-      "id": "8078",
-      "surveyId": "6832",
-      "responses": {
-        "0": "ah"
-      }
-    },
-    {
-      "id": "9bd6",
-      "surveyId": "6832",
-      "responses": {
-        "0": "la"
-      }
-    },
-    {
-      "id": "9807",
-      "surveyId": "6832",
-      "responses": {
-        "0": "ah"
-      }
-    },
-    {
-      "id": "0a45",
-      "surveyId": "bef3",
-      "responses": {
-        "0": "aaaaaaaaaaa"
-      }
-    },
-    {
-      "id": "c55a",
-      "surveyId": "bef3",
-      "responses": {
-        "0": "aaaaaaaaaaa"
-      }
-    },
-    {
-      "id": "fef9",
-      "surveyId": "60b6",
-      "responses": {
-        "0": "dortmund"
-      }
-    },
-    {
-      "id": "8f9b",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "LOL",
-        "1": "FIFA",
-        "2": "M&B"
-      }
-    },
-    {
-      "id": "a03f",
-      "surveyId": "60b6",
-      "responses": {
-        "0": "dortmund"
-      }
-    },
-    {
-      "id": "3782",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
-        "1": "Yes",
-        "2": "Very likely"
-      }
-    },
-    {
-      "id": "869e",
-      "surveyId": "6832",
-      "responses": {
-        "0": "la"
-      },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "cac7",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "LOL",
-        "1": "PES",
-        "2": "D&D"
-      },
-      "age": "45+",
-      "gender": "Female"
-    },
-    {
-      "id": "0aae",
-      "surveyId": "60b6",
-      "responses": {
-        "0": "bayern"
-      },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "6a66",
-      "surveyId": "4e90",
-      "responses": {
-        "0": "EEEEEee"
-      },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "8277",
-      "surveyId": "4e90",
-      "responses": {
-        "0": "EEEEEee"
-      },
-      "age": "25-35",
-      "gender": "Male"
-    },
-    {
-      "id": "d395",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "DOTA",
-        "1": "FIFA",
-        "2": "D&D"
-      },
-      "age": "-18",
-      "gender": "Male"
-    },
-    {
-      "id": "479a",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "DOTA",
-        "1": "PES",
-        "2": "D&D"
-      },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "e130",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "DOTA",
-        "1": "PES",
-        "2": "M&B"
-      },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "d191",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "LOL",
-        "1": "PES",
-        "2": "M&B"
       },
       "age": "25-35",
       "gender": "Female"
     },
     {
-      "id": "3fc5",
+      "id": "0c04",
       "surveyId": "88fc",
       "responses": {
-        "0": "DOTA",
-        "1": "PES",
+        "0": "MOBILE LEGEND",
+        "1": "FIFA",
         "2": "D&D"
       },
-      "age": "35-45",
-      "gender": "Male"
+      "age": "25-35",
+      "gender": "Female"
     },
     {
-      "id": "0a6c",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "DOTA",
-        "1": "FIFA",
-        "2": "M&B"
-      },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "370e",
+      "id": "0ea5",
       "surveyId": "88fc",
       "responses": {
         "0": "MOBILE LEGEND",
         "1": "PES",
         "2": "M&B"
       },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "3afd",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "LOL",
-        "1": "PES",
-        "2": "M&B"
-      },
       "age": "-18",
       "gender": "Male"
     },
     {
-      "id": "ba2c",
-      "surveyId": "88fc",
-      "responses": {
-        "0": "DOTA",
-        "1": "FIFA",
-        "2": "M&B"
-      },
-      "age": "-18",
-      "gender": "Male"
-    },
-    {
-      "id": "0b37",
-      "surveyId": "3",
-      "responses": {
-        "0": "Very satisfied",
-        "1": "Yes",
-        "2": "Very likely"
-      },
-      "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "9811",
+      "id": "b16d",
       "surveyId": "3",
       "responses": {
         "0": "Very satisfied",
         "1": "Partially",
         "2": "Likely"
       },
+      "age": "18-25",
+      "gender": "Male"
+    },
+    {
+      "id": "9b35",
+      "surveyId": "3",
+      "responses": {
+        "0": "Satisfied",
+        "1": "No",
+        "2": "Unlikely"
+      },
+      "age": "35-45",
+      "gender": "Male"
+    },
+    {
+      "id": "214a",
+      "surveyId": "28ac",
+      "responses": {
+        "0": "football"
+      },
+      "age": "18-25",
+      "gender": "Female"
+    },
+    {
+      "id": "b139",
+      "surveyId": "28ac",
+      "responses": {
+        "0": "football"
+      },
+      "age": "-18",
+      "gender": "Male"
+    },
+    {
+      "id": "20d5",
+      "surveyId": "28ac",
+      "responses": {
+        "0": "tennis"
+      },
       "age": "-18",
       "gender": "Female"
     },
     {
-      "id": "4c94",
-      "surveyId": "ffcf",
+      "id": "3d0f",
+      "surveyId": "3",
       "responses": {
-        "0": "Yes",
-        "1": "Yes",
-        "2": "Yes",
-        "3": "No",
-        "4": "Yes",
-        "5": "Yes",
-        "6": "No",
-        "7": "Tennis",
-        "8": "BasketBall"
+        "0": "Neutral",
+        "1": "No",
+        "2": "Likely"
       },
-      "age": "18-25",
+      "age": "35-45",
       "gender": "Male"
     },
     {
-      "id": "3854",
+      "id": "306e",
       "surveyId": "88fc",
       "responses": {
         "0": "LOL",
-        "1": "FIFA",
-        "2": "D&D"
+        "1": "PES",
+        "2": "M&B"
       },
       "age": "18-25",
-      "gender": "Male"
-    },
-    {
-      "id": "d9b8",
-      "surveyId": "6832",
-      "responses": {
-        "0": "la"
-      },
-      "age": "25-35",
       "gender": "Female"
     }
   ]

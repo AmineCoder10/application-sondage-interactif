@@ -14,11 +14,6 @@ export default function SurveyForm() {
   const [answers, setAnswers] = useState({});
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
-  //-----------------------------------------
-
-  
-
-  //---------------------------------------------------------------
 
   useEffect(() => {
     const fetchData = async () => {
@@ -73,13 +68,12 @@ export default function SurveyForm() {
   );
 
   return (
-    <>
       <Container
         style={{
           position: "relative",
           border: "solid black",
           padding: "58px",
-          marginTop: "60px",
+          marginTop: "100px",
           marginBottom: "70px",
           borderRadius: "20px",
         }}
@@ -187,6 +181,5 @@ export default function SurveyForm() {
           </Col>
         </Row>
       </Container>
-    </>
   );
 }

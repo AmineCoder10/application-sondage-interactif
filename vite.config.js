@@ -21,10 +21,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   return {
-    base: command === 'serve' ? '/' : '/home/', // Use '/' for local dev and '/home/' for production
+    //base: command === 'serve' ? '/' : '/home/', // Use '/' for local dev and '/home/' for production
     plugins: [react()],
+    base: '/application-sondage-interactif/',
     build: {
       rollupOptions: {
         output: {

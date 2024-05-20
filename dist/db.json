@@ -1,0 +1,313 @@
+{
+  "Surveys": [
+    {
+      "id": "3",
+      "title": "Patient Satisfaction Survey",
+      "description": "We strive to provide excellent care to our patients. Please tell us about your recent experience at our healthcare facility.",
+      "questions": [
+        {
+          "question": "How satisfied were you with the courtesy and professionalism of the staff?",
+          "options": [
+            {
+              "text": "Very satisfied"
+            },
+            {
+              "text": "Satisfied"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Dissatisfied"
+            }
+          ]
+        },
+        {
+          "question": "Did you feel well-informed about your treatment plan and options?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            },
+            {
+              "text": "Partially"
+            }
+          ]
+        },
+        {
+          "question": "How likely are you to return to our facility for future healthcare needs?",
+          "options": [
+            {
+              "text": "Very likely"
+            },
+            {
+              "text": "Likely"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Unlikely"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "88fc",
+      "title": "Gaming",
+      "description": "its a survey for gaming ",
+      "questions": [
+        {
+          "question": "best moba game?",
+          "options": [
+            {
+              "text": "LOL"
+            },
+            {
+              "text": "DOTA"
+            },
+            {
+              "text": "MOBILE LEGEND"
+            }
+          ]
+        },
+        {
+          "question": "Best sport game",
+          "options": [
+            {
+              "text": "FIFA"
+            },
+            {
+              "text": "PES"
+            }
+          ]
+        },
+        {
+          "question": "Best MMORPG GAME?",
+          "options": [
+            {
+              "text": "M&B"
+            },
+            {
+              "text": "D&D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Football World Cup 2030 Survey",
+      "description": "We are excited about the upcoming Football World Cup 2030 in Morocco! Please share your thoughts and expectations about the event.",
+      "questions": [
+        {
+          "question": "How excited are you about the Football World Cup 2030 in Morocco?",
+          "options": [
+            {
+              "text": "Very excited"
+            },
+            {
+              "text": "Excited"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Not excited"
+            }
+          ]
+        },
+        {
+          "question": "is hosting the World Cup will have a positive impact on Morocco's economy?",
+          "options": [
+            {
+              "text": "Yes"
+            },
+            {
+              "text": "No"
+            },
+            {
+              "text": "Not sure"
+            }
+          ]
+        },
+        {
+          "question": "How likely are you to attend a match in Morocco during the World Cup?",
+          "options": [
+            {
+              "text": "Very likely"
+            },
+            {
+              "text": "Likely"
+            },
+            {
+              "text": "Neutral"
+            },
+            {
+              "text": "Unlikely"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28ac",
+      "title": "sport",
+      "description": "about sport",
+      "questions": [
+        {
+          "question": "which sport do u play ?",
+          "options": [
+            {
+              "text": "football"
+            },
+            {
+              "text": "tennis"
+            },
+            {
+              "text": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Answers": [
+    {
+      "surveyId": "3",
+      "responses": [
+        {
+          "question": "How satisfied were you with the courtesy and professionalism of the staff?",
+          "answer": "Very satisfied"
+        },
+        {
+          "question": "Did you feel well-informed about your treatment plan and options?",
+          "answer": "Yes"
+        },
+        {
+          "question": "How likely are you to return to our facility for future healthcare needs?",
+          "answer": "Very likely"
+        }
+      ],
+      "id": "dab1"
+    },
+    {
+      "id": "ff59",
+      "surveyId": "4",
+      "responses": {
+        "0": "Excited",
+        "1": "Yes",
+        "2": "Likely"
+      },
+      "age": "18-25",
+      "gender": "Male"
+    },
+    {
+      "id": "13f0",
+      "surveyId": "4",
+      "responses": {
+        "0": "Very excited",
+        "1": "Yes",
+        "2": "Very likely"
+      },
+      "age": "25-35",
+      "gender": "Female"
+    },
+    {
+      "id": "0c04",
+      "surveyId": "88fc",
+      "responses": {
+        "0": "MOBILE LEGEND",
+        "1": "FIFA",
+        "2": "D&D"
+      },
+      "age": "25-35",
+      "gender": "Female"
+    },
+    {
+      "id": "0ea5",
+      "surveyId": "88fc",
+      "responses": {
+        "0": "MOBILE LEGEND",
+        "1": "PES",
+        "2": "M&B"
+      },
+      "age": "-18",
+      "gender": "Male"
+    },
+    {
+      "id": "b16d",
+      "surveyId": "3",
+      "responses": {
+        "0": "Very satisfied",
+        "1": "Partially",
+        "2": "Likely"
+      },
+      "age": "18-25",
+      "gender": "Male"
+    },
+    {
+      "id": "9b35",
+      "surveyId": "3",
+      "responses": {
+        "0": "Satisfied",
+        "1": "No",
+        "2": "Unlikely"
+      },
+      "age": "35-45",
+      "gender": "Male"
+    },
+    {
+      "id": "214a",
+      "surveyId": "28ac",
+      "responses": {
+        "0": "football"
+      },
+      "age": "18-25",
+      "gender": "Female"
+    },
+    {
+      "id": "b139",
+      "surveyId": "28ac",
+      "responses": {
+        "0": "football"
+      },
+      "age": "-18",
+      "gender": "Male"
+    },
+    {
+      "id": "20d5",
+      "surveyId": "28ac",
+      "responses": {
+        "0": "tennis"
+      },
+      "age": "-18",
+      "gender": "Female"
+    },
+    {
+      "id": "3d0f",
+      "surveyId": "3",
+      "responses": {
+        "0": "Neutral",
+        "1": "No",
+        "2": "Likely"
+      },
+      "age": "35-45",
+      "gender": "Male"
+    },
+    {
+      "id": "306e",
+      "surveyId": "88fc",
+      "responses": {
+        "0": "LOL",
+        "1": "PES",
+        "2": "M&B"
+      },
+      "age": "18-25",
+      "gender": "Female"
+    }
+  ]
+}

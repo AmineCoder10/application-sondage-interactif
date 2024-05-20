@@ -17,10 +17,6 @@ const nav__links = [
         path: "survey",
         display: "Survey",
     },
-    {
-        path: "reports",
-        display: "Reports",
-    },
 ];
 
 function Header() {

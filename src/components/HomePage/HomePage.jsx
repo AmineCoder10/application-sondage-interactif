@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import img from '../../assets/checked.png';
 import CardGallery from '../../Pages/CardGallery';
 import Services from "../Services/Services";
+import HelmetComponent from "../CustomHook/HelmeComponentt";
 
 
 function HomePage() {
@@ -11,12 +12,13 @@ function HomePage() {
 
   return (
     <>
+      <HelmetComponent title="Welcome to PollMaster" />
       <section className="hero__section">
         <div className="hero__content">
-          <p className="hero__subtitle" style={{marginRight:"70%"}}>best Pool plateform in {year}</p>
+          <p className="hero__subtitle" style={{ marginRight: "70%" }}>best Pool plateform in {year}</p>
           <h2>Make Your Survey</h2>
-          <p style={{width:"700px"}}>
-            HELLO, Create customized surveys tailored to your needs. Gather 
+          <p style={{ width: "700px" }}>
+            HELLO, Create customized surveys tailored to your needs. Gather
             valuable insights, make informed decisions, and engage with your
             audience like never before.
           </p>
@@ -39,11 +41,10 @@ function HomePage() {
 
       <div className="card-container" id="#cards">
         <div className="card-group">
-          <Services/>
-          <CardGallery/>
+          <Services />
+          <CardGallery />
         </div>
       </div>
-      
     </>
   );
 }

@@ -13,11 +13,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 10px 0 70px 40px;
+  margin: 10px 0px 70px 40px;
 }
 
 .card-group {
   display: flex;
+  margin-left: 20px;
 }
 
 .card-group>div {

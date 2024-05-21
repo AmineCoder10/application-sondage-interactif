@@ -18,6 +18,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import BackButton from '../UI/BackButton';
 import { useNavigate } from 'react-router-dom';
+import HelmetComponent from '../CustomHook/HelmeComponentt';
 
 export default function CreateSurvey() {
     const [surveyTitle, setSurveyTitle] = useState('');
@@ -121,7 +122,8 @@ export default function CreateSurvey() {
 
 
     return (
-        <div>
+        <>
+            <HelmetComponent title="Create a New Survey" />
             <Container style={{ position: "relative", border: "solid black", padding: "58px", marginTop: "100px", marginBottom: "70px", borderRadius: "20px" }}>
                 <div className='form'>
                     <h1 className="mb-4 survey-title">Create Survey</h1>
@@ -205,8 +207,7 @@ export default function CreateSurvey() {
                 </motion.div>
             </Container>;
             <BackButton style={{ position: "absolute", top: "11%", left: "7%", marginRight: "80px", marginTop: "20px", paddingRight: "30px", paddingTop: "8px", paddingLeft: "30px", paddingBottom: "8px" }} />
-
-        </div>
+        </>
     )
 
 }

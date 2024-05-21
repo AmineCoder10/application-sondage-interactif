@@ -152,27 +152,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "28ac",
-      "title": "sport",
-      "description": "about sport",
-      "questions": [
-        {
-          "question": "which sport do u play ?",
-          "options": [
-            {
-              "text": "football"
-            },
-            {
-              "text": "tennis"
-            },
-            {
-              "text": "Other"
-            }
-          ]
-        }
-      ]
     }
   ],
   "Answers": [
@@ -308,6 +287,15 @@
       },
       "age": "18-25",
       "gender": "Female"
+    },
+    {
+      "id": "cbec",
+      "surveyId": "2d5c",
+      "responses": {
+        "0": "mmmmmm"
+      },
+      "age": "18-25",
+      "gender": "Male"
     }
   ]
 }

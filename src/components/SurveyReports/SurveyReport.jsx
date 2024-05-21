@@ -14,6 +14,7 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 import { useParams } from "react-router-dom";
 import "./SurveyReport.css";
 import { Container } from "reactstrap";
+import HelmetComponent from "../CustomHook/HelmeComponentt";
 
 // Register the required Chart.js elements and the datalabels plugin
 Chart.register(
@@ -177,6 +178,8 @@ const SurveyReport = () => {
   };
 
   return (
+    <>
+      <HelmetComponent title="Survey Reports and Analytics" />
       <Container style={{
         position: "relative",
         border: "solid black",
@@ -225,6 +228,7 @@ const SurveyReport = () => {
           <p>Loading report data...</p>
         )}
       </Container>
+    </>
   );
 };
 

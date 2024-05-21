@@ -24,7 +24,12 @@
     "react-chart.js": "^1.0.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.23.1",
+=======
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.23.0",
+>>>>>>> 9434771e15fe8f3a246aee09090786e1b28250ff
     "react-toastify": "^10.0.5",
     "reactstrap": "^9.2.2"
   },

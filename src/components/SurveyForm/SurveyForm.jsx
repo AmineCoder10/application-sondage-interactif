@@ -6,6 +6,7 @@ import './SurveyForm.css';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import SurveyLogo from '../../assets/images/surveyLogo.png';
+import HelmetComponent from '../CustomHook/HelmeComponentt';
 
 export default function SurveyForm() {
   const { id } = useParams();
@@ -68,6 +69,8 @@ export default function SurveyForm() {
   );
 
   return (
+    <>
+      <HelmetComponent title={`Participate in ${surveyData.title}`} />
       <Container
         style={{
           position: "relative",
@@ -181,5 +184,6 @@ export default function SurveyForm() {
           </Col>
         </Row>
       </Container>
+    </>
   );
 }

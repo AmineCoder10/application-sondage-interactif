@@ -17,15 +17,13 @@
 //   },
 // })
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
-export default defineConfig(({command}) => {
+export default defineConfig(({ command }) => {
   return {
-    base: command === 'serve' ? '/' : '/home/', // Use '/' for local dev and '/home/' for production
+    base: command === 'serve' ? '/' : '/application-sondage-interactif/', // Adjust the base URL for GitHub Pages
     plugins: [react()],
-    //base: '/application-sondage-interactif/',
     build: {
       rollupOptions: {
         output: {
@@ -36,5 +34,5 @@ export default defineConfig(({command}) => {
       },
       chunkSizeWarningLimit: 1000,
     },
-  }
-})
+  };
+});

@@ -173,6 +173,117 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ad8b",
+      "title": "Habitudes d'exercice physique",
+      "description": "Nous cherchons à comprendre les habitudes d'exercice physique de nos clients pour mieux adapter nos programmes et services.Nous cherchons à comprendre les habitudes d'exercice physique de nos clients pour mieux adapter nos programmes et services.Nous cherchons à comprendre les habitudes d'exercice physique de nos clients pour mieux adapter nos programmes et services,Nous cherchons à comprendre les habitudes d'exercice physique de nos clients pour mieux adapter nos programmes et services.",
+      "questions": [
+        {
+          "question": "À quelle fréquence pratiquez-vous une activité physique chaque semaine ?",
+          "options": [
+            {
+              "text": "Plusieurs fois par semaine"
+            },
+            {
+              "text": "Une fois par semaine"
+            },
+            {
+              "text": "Moins d'une fois par semaine"
+            }
+          ]
+        },
+        {
+          "question": "Quel type d'activité physique préférez-vous ?",
+          "options": [
+            {
+              "text": "Cardio (course, vélo, natation)"
+            },
+            {
+              "text": "Musculation"
+            }
+          ]
+        },
+        {
+          "question": "ytfuyguh",
+          "options": [
+            {
+              "text": "yug"
+            },
+            {
+              "text": "yutit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b7a8",
+      "title": "Football",
+      "description": "izuefhiuzefh zkeurfhzieoufh zeuifhizuefh zkjefhaiuefh zkuefhzuiefh aiuezfhiauzef zeuifhzieuf zkeufhizuefh zkeufhzioeufh ",
+      "questions": [
+        {
+          "question": "zorifjzroifzrpiguzrjg",
+          "options": [
+            {
+              "text": "zroigjprofgi"
+            },
+            {
+              "text": "ziroejgzroifj"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0a49",
+      "title": "gaming2",
+      "description": "zkurfhzurf zkrufhziurfh zrufhziurfh zusrzghirg zrughirg zsrughsrig zsruh ",
+      "questions": [
+        {
+          "question": "ziejfoizjef",
+          "options": [
+            {
+              "text": "zlrijfzifé"
+            },
+            {
+              "text": "zsrijfzf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e53c",
+      "title": "Habitudes d'exercice",
+      "description": "Nous cherchons à comprendre les habitudes d'exercice physique de nos clients",
+      "questions": [
+        {
+          "question": "À quelle fréquence pratiquez-vous une activité physique chaque semaine ?",
+          "options": [
+            {
+              "text": "Plusieurs fois par semaine"
+            },
+            {
+              "text": "Une fois par semaine"
+            },
+            {
+              "text": "Moins d'une fois par semaine"
+            }
+          ]
+        },
+        {
+          "question": "Quel type d'activité physique préférez-vous ?",
+          "options": [
+            {
+              "text": "Cardio (course, vélo, natation)"
+            },
+            {
+              "text": "Musculation"
+            }
+          ]
+        }
+      ]
     }
   ],
   "Answers": [
@@ -308,6 +419,16 @@
       },
       "age": "18-25",
       "gender": "Female"
+    },
+    {
+      "id": "69b6",
+      "surveyId": "e53c",
+      "responses": {
+        "0": "Plusieurs fois par semaine",
+        "1": "Cardio (course, vélo, natation)"
+      },
+      "age": "25-35",
+      "gender": "Male"
     }
   ]
 }
